@@ -1,0 +1,12 @@
+<div class="container">
+    <h1>Upload up to 5 Excel Files</h1>
+    <form (submit)="onSubmit($event)">
+        <input type="file" multiple accept=".xlsx, .csv" (change)="onFileSelected($event)" [disabled]="isUploading" />
+        <button type="submit" [disabled]="!files.length || isUploading">
+            {{ isUploading ? 'Uploading...' : 'Upload and Download Filtered Excel' }}
+        </button>
+    </form>
+    <div class="message" [ngClass]="{ error: errorMessage, success: successMessage }">
+        {{ errorMessage || successMessage }}
+    </div>
+</div>

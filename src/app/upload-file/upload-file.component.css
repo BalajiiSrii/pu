@@ -1,0 +1,49 @@
+.container {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      max-width: 400px;
+      margin: 2rem auto;
+      padding: 1.5rem;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    h1 {
+      color: #2c3e50;
+      margin-bottom: 1.5rem;
+    }
+    input[type="file"] {
+      padding: 0.5rem;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+    button {
+      background: #3498db;
+      border: none;
+      color: white;
+      padding: 0.7rem 1.2rem;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      width: 100%;
+    }
+    button:disabled {
+      background: #7f8c8d;
+      cursor: not-allowed;
+    }
+    button:hover:not(:disabled) {
+      background: #2980b9;
+    }
+    .message {
+      margin-top: 1rem;
+      font-weight: 600;
+    }
+    .error {
+      color: #e74c3c;
+    }
+    .success {
+      color: #27ae60;
+    }
